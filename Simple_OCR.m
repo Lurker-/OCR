@@ -84,7 +84,7 @@ function btnsegmentation_Callback(hObject, eventdata, handles)
 load Output_File
 
 %Label and Count Connected components
-[L M] = bwlabel(Output_File);
+[L M] = bwlabeln(Output_File);
 glyphs = []  %%%Initilize glyphs matrix
 
    for n=1:M
