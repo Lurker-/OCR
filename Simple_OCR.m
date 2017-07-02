@@ -182,6 +182,21 @@ function btnclassification_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 
+
+
+% %Training with the help of training function 
+% net = edu_createnn(P,T);
+% net = newff(P,T,[35], {'logsig'}) 
+% net.divideParam.trainRatio = 1; % training set [%]
+% net.divideParam.valRatio = 0; % validation set [%]
+% net.divideParam.testRatio = 0; % test set [%]
+% net.trainParam.goal = 0.001;
+% [net,tr,Y,E] = train(net,P,T);
+% %% Testing the Neural Network
+
+
+
+
 %%%% Classification
 
 load glyphs;
